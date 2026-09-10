@@ -1,0 +1,95 @@
+body{
+    font-family:Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-image: url("/fundo2.jpg");
+}
+
+h1{
+    text-align: center;
+    color: rgb(250, 252, 252);
+    font-size: 38px;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+
+    animation-name: aparecer;
+    animation-duration: 5s;
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    
+
+}
+nav{
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* regras para os links do menu */
+
+/* seletor DESCENDENTE */
+
+nav a {
+    text-decoration: none;
+    background-color: rgb(141, 194, 240);
+    color: rgb(7, 101, 101);
+    font-weight: bold;
+    padding:  10px 20px;
+    transition: 2s;
+}
+
+/* seletor: PSEUDO CLASSE */
+Nav a:hover, nav a:focus{
+    background-color: rgb(252, 248, 255);
+}
+
+/* seletor CLASSE */
+.introducao{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(7, 101, 101);
+    margin-bottom: 30px;
+}
+
+details{
+    background-color: rgb(29, 72, 109);
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: blue;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+summary{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 255, 255);
+    cursor:pointer;
+}
+    /* seletor: ATRIBUTO */
+    details[open] {
+        background-color: rgb(251, 245, 245);
+    }
+
+    details[open] p{
+        color: rgb(37, 0, 250);
+    }
+    
+   
+    /* animação css*/
+    @keyframes aparecer {
+        from{
+            opacity: 0;
+            transform: scale(0.5) translateY(-100px);
+        }
+       
+        to{
+            opacity: 1;
+        }
+    }

@@ -1,0 +1,27 @@
+section{
+background-color: rgb(255, 4, 4); /* cor de fundo */
+height: 300px; /* altura*/
+/* Flex box - organizção de leiaute*/
+
+display: flex;
+
+flex-direction: row; /* propriedade para descidir se o conteúdo fica em linha (row) ou coluna (colum) */
+
+justify-content: center;
+align-items: center;
+/* esses dois comandos organizam a posição ( vertical e horizontal */
+
+gap: 10px;
+/* espaço entre os filhos */
+}
+
+
+
+div{
+    background-color: rgb(6, 1, 72);
+    height: 200px;
+    width: 100%;
+   
+    border: 0px solid rgb(0, 251, 255); /* borda (esperssura, formato cor) */
+
+}
